@@ -26,14 +26,14 @@ function searchFines(searchKey){
         alert("Пусто!!!");
         return DB;
     }
-    //идем по объекту и ищем введенный номер
+    //йдемо по об'єкту, шукаємо номер
     for(let i = 0; i < DB.length; i++){
     if ( DB[i].номер == searchKey){
         return [DB[i]];
     }
 }
 
-alert("Не найденно!!!1");
+alert("Не знайдено!!!1");
 return DB;
     }else{
         if(validInput(searchKey)){
@@ -49,16 +49,16 @@ return DB;
         if (arr.length){
             return arr;
         }
-        alert("Не найденно!!!2");
+        alert("Не знайдено!!!2");
         return DB;
     }
     
 
 }
 
-//Эта функция должна определять что мы вводим в поля и соответсветнно определять ищим мы по номеру или по названию
+//цією функцією визначаємо шукаємо ми номером чи назвою
 function opredelenieSearchKey(searchKey){
-    //пытаемся понять searchKey слово или число
+    //що це searchKey слово чи число
     if(Number(searchKey)+1){
         return 1;
     }else{
@@ -79,5 +79,5 @@ function validInput(searchKey){
 
 
 // return [
-//     {номер: '001', тип: 'Поиск по буквам', сума: 100, дата: '2023-01-15'},
+//     {номер: '001', тип: 'Пошук по буквам', сума: 100, дата: '2023-01-15'},
 // ];
